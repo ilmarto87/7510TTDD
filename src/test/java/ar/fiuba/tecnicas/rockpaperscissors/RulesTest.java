@@ -7,7 +7,7 @@ import org.junit.Test;
 public class RulesTest {
 	
     private Rock rock = new Rock();
-//  private XXXXXX paper = XXXXXX;
+    private Paper paper = new Paper();
     private Scissor scissors = new Scissor();
 
 
@@ -16,15 +16,15 @@ public class RulesTest {
       assertEquals(rock, rock.vs(scissors));
   }   
   
-//@Test
-//public void rockLostWithPaper() {
-//    assertEquals(paper, rock.vs(paper));
-//}
+	@Test
+	public void rockLostWithPaper() {
+	    assertEquals(paper, rock.vs(paper));
+	}
 
-//@Test
-//public void rockTieWithRock() {
-//    assertEquals(rock, rock.vs(rock));
-//}
+	@Test
+	public void rockTieWithRock() {
+	    assertEquals(rock, rock.vs(rock));
+	}
 //
 //@Test
 //public void paperBeatsRock() {
